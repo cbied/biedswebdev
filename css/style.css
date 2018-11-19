@@ -1,9 +1,9 @@
 :root {
   --container-bg-color: #333;
-  --left-bg-color: rgba(223, 39, 39, 0.7);
-  --left-button-hover-color: rgba(161, 11, 11, 0.3);
-  --right-bg-color: rgba(43, 43, 43, 0.8);
-  --right-button-hover-color: rgba(92, 92, 92, 0.3);
+  --left-bg-color: rgba(80, 109, 255, 0.7);
+  --left-button-hover-color: rgba(255, 255, 255, 0.3);
+  --right-bg-color: rgba(255, 255, 255, 0.8);
+  --right-button-hover-color: rgba(80, 109, 255, 0.3);
   --text-white: white;
   --hover-width: 75%;
   --other-width: 25%;
@@ -20,8 +20,8 @@ html, body {
 }
 
 h1 {
+  font-family: "Allerta Stencil", sans-serif;
   font-size: 4rem;
-  color: #fff;
   position: absolute;
   left: 50%;
   top: 20%;
@@ -29,22 +29,62 @@ h1 {
   white-space: nowrap;
 }
 
+#leftH1 {
+  color: var(--right-bg-color);
+}
+
+#rightH1 {
+  color: var(--left-bg-color);
+}
+
 .button {
+  font-family: 'Playfair Display', serif;
   display: block;
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 55%;
   height: 4rem;
-  padding-top: 1.3rem;
   width: 15rem;
   text-align: center;
-  color: #fff;
-  border: #fff solid 0.2rem;
+  color: var(--text-white);
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   transform: translateX(-50%);
+}
+
+ #rightBtn {
+  color: var(--left-bg-color);
+}
+
+.icons i {
+  position: absolute;
+  top: 30%;
+  padding-top: 1rem;
+  transform: translateX(-50%);
+}
+
+.l-icons a i{
+  color: var(--right-bg-color);
+}
+
+.r-icons a i {
+  color: var(--left-bg-color)
+}
+
+
+#icon-left i {
+  left: 45%;
+}
+
+#icon-right i {
+  left: 55%;
+}
+
+#icon-bottom i {
+  left: 50%;
+  top: 40%;
 }
 
 .split.left .button:hover {
@@ -111,7 +151,6 @@ h1 {
   z-index: 2;
 }
 
-
 .hover-right .right {
   width: var(--hover-width);
 }
@@ -128,15 +167,22 @@ h1 {
   overflow-y: auto;
 }
 
-#accordion {
-  margin-top: 35%;
-  transition: var(--speed) ease-out;
-}
+
 
 #accordion, #accordion a {
-  color: var(--text-white);
+  color: var(--left-bg-color);
   text-decoration: none;
 }
+
+.media-body h5 {
+  margin-top: 1rem;
+}
+
+.media img {
+  border-radius: 30%;
+}
+
+
 
 @media(max-width: 800px) {
   h1 {
@@ -146,10 +192,34 @@ h1 {
   .button {
     width: 12rem;
   }
+
+  #icon-left i {
+    left: 35%;
+  }
+
+  #icon-right i {
+    left: 65%;
+  }
 }
 
 @media(max-height: 700px) {
   .button {
     top: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .media {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .media h5 {
+    margin-top: 2rem;
+  }
+
+  .media img {
+    align-self: center;
   }
 }

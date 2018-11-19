@@ -18,23 +18,3 @@ right.addEventListener("mouseenter", () => {
 right.addEventListener("mouseleave", () => {
   container.classList.remove("hover-right");
 });
-
-const leftBtn = document.querySelector("#leftBtn");
-const accordion = document.querySelector("#accordion");
-
-accordion.hidden = true;
-
-// toggle read more
-leftBtn.addEventListener("click", () => {
-  if (accordion.hidden === true) {
-    return accordion.hidden = false;
-  } else if (accordion.hidden === false) {
-    return accordion.hidden = true;
-  }
-})
-
-
-// accordion hidden when mouseleave
-accordion.addEventListener("mouseleave", () => {
-    accordion.hidden = true;
-})

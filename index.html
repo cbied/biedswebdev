@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+  crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
   crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css\style.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Playfair+Display" rel="stylesheet">
     <meta charset="utf-8">
     <title>Split Landing Page</title>
   </head>
@@ -12,59 +16,192 @@
 
 <div class="container">
   <div class="split left" id="left-side">
-    <h1>About Me</h1>
-    <a href="#" class="button" id="leftBtn">Read more</a>
+    <h1 id="leftH1">About Me</h1>
+      <div class="icons l-icons" id="icon-left"><a href="https://github.com/cbied" target="_blank"><i class="fab fa-3x fa-github-square "></i></a></div>
+      <div class="icons l-icons" id="icon-right"><a href="https://www.linkedin.com/in/chris-biediger-60739162/" target="_blank"><i class="fab fa-3x fa-linkedin"></i></a></div>
+      <div class="icons l-icons" id="icon-bottom"><a href="mailto:cabiediger@gmail.com" target="_blank"><i class="fas fa-3x fa-envelope"></i></a></div>
+
+  <!-- Modal button -->
+  <button class="btn btn-outline-light button" id="leftBtn" data-toggle="modal" data-target="#myModal">Read More</button>
 
 
-  <!-- Left Hidden Accordion -->
-
-  <div id="accordion">
-    <div class="card bg-dark">
-      <div class="card-header">
-        <h5 class="text-center">
-          <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
-            About Me
-          </a>
-        </h5>
-      </div>
-
-      <div id="collapse1" class="collapse active">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-4 col-xl-3">
-              <img src="img/professional.jpg" alt="Profile Pic">
+  <!-- Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <!-- Left Accordion -->
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="text-center">
+                <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
+                  About Me
+                </a>
+              </h5>
             </div>
-          <div class="col-md-8 col-xl-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
-          aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
-          et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.</div>
+
+            <div id="collapse1" class="collapse active">
+              <div class="card-body">
+                <div class="media">
+                  <img class="mr-3 mt-3" src="img/professional.jpg">
+                  <div class="media-body">
+                    <h5>Hello!</h5>
+                    <p>My name is Chris and I am a frontend developer. Please checkout my skills below, as well as my projects to the right. If you have any questions or want to conact me, you can email me at <a href="mailto:cabiediger@gmail.com" target="_blank">cabiediger@gmail.com</a></p>
+                    <p>I currently travel full time and do freelance work. I love to combined my two passions of traveling the world and working on web developemnt projects that excite me. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h5 class="text-center">
+                <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
+                  Skills
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapse2" class="collapse">
+              <div class="card-body">
+                <table class="table table-borderless text-center">
+      <thead class="text-white bg-dark">
+          <tr>
+              <th>Frontend</th>
+              <th>Framworks/tools</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th scope="row">HTML</th>
+              <td>Git/Git bash</td>
+          </tr>
+          <tr>
+              <th scope="row">CSS</th>
+              <td>Bootstrap</td>
+          </tr>
+          <tr>
+              <th scope="row">JavaScript</th>
+              <td>Sass</td>
+          </tr>
+          <tr>
+              <th scope="row"></th>
+              <td>WordPress</td>
+          </tr>
+      </tbody>
+  </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-primary" data-dismiss="modal">Close</button>
         </div>
       </div>
-      </div>
     </div>
-
-    <div class="card bg-dark">
-      <div class="card-header">
-        <h5 class="text-center">
-          <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
-            Skills
-          </a>
-        </h5>
-      </div>
-
-      <div id="collapse2" class="collapse">
-        <div class="card-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
-          aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
-          et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
-        </div>
-      </div>
-    </div>
-
   </div>
+
 </div>
+
   <div class="split right">
-    <h1>Projects</h1>
-    <a href="#" class="button">Read more</a>
+    <h1 id="rightH1">Projects</h1>
+      <div class="icons r-icons" id="icon-left"><a href="https://github.com/cbied" target="_blank"><i class="fab fa-3x fa-github-square "></i></a></div>
+      <div class="icons r-icons" id="icon-right"><a href="https://www.linkedin.com/in/chris-biediger-60739162/" target="_blank"><i class="fab fa-3x fa-linkedin"></i></a></div>
+      <div class="icons r-icons" id="icon-bottom"><a href="mailto:cabiediger@gmail.com" target="_blank"><i class="fas fa-3x fa-envelope"></i></a></div>
+
+  <!-- Modal button -->
+  <button class="btn btn-outline-primary button" id="rightBtn" data-toggle="modal" data-target="#projectModal">Read More</button>
+
+
+  <!-- Modal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <!-- right Accordion -->
+        <div id="accordion2">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="text-center">
+                <a href="#collapse3" data-parent="#accordion2" data-toggle="collapse">
+                  Project 1
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapse3" class="collapse active">
+              <div class="card-body">
+                <div class="media">
+                  <img class="mr-3 mt-3" src="img/professional.jpg">
+                  <div class="media-body">
+                    <h5>Hello!</h5>
+                    <p>My name is Chris and I am a frontend developer. Please checkout my skills below, as well as my projects to the right. If you have any questions or want to conact me, you can email me at <a href="mailto:cabiediger@gmail.com" target="_blank">cabiediger@gmail.com</a></p>
+                    <p>I currently travel full time and do freelance work. I love to combined my two passions of traveling the world and working on web developemnt projects that excite me. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h5 class="text-center">
+                <a href="#collapse4" data-parent="#accordion2" data-toggle="collapse">
+                  Project 2
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapse4" class="collapse">
+              <div class="card-body">
+                <table class="table table-borderless text-center">
+      <thead class="text-white bg-dark">
+          <tr>
+              <th>Frontend</th>
+              <th>Framworks/tools</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th scope="row">HTML</th>
+              <td>Git/Git bash</td>
+          </tr>
+          <tr>
+              <th scope="row">CSS</th>
+              <td>Bootstrap</td>
+          </tr>
+          <tr>
+              <th scope="row">JavaScript</th>
+              <td>Sass</td>
+          </tr>
+          <tr>
+              <th scope="row"></th>
+              <td>WordPress</td>
+          </tr>
+      </tbody>
+  </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 </div>
 
