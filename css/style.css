@@ -54,8 +54,8 @@ h1 {
   transform: translateX(-50%);
 }
 
- #rightBtn {
-  color: var(--left-bg-color);
+#rightBtn {
+ color: var(--left-bg-color);
 }
 
 .icons i {
@@ -85,6 +85,11 @@ h1 {
 #icon-bottom i {
   left: 50%;
   top: 40%;
+}
+
+.modal-body {
+  font-family: 'Playfair Display', serif;
+  background-color: silver;
 }
 
 .split.left .button:hover {
@@ -123,7 +128,7 @@ h1 {
 
 .split.right {
   right:0;
-  background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
+  background: url('../img/programmer.png') center center no-repeat;
   background-size: cover;
 }
 
