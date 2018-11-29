@@ -1,6 +1,7 @@
-const left = document.querySelector(".left");
-const right = document.querySelector(".right");
-const container = document.querySelector(".container");
+const left = document.getElementsByClassName("left")[0];
+const right = document.getElementsByClassName("right")[0];
+const container = document.getElementsByClassName("container")[0];
+
 
 // mouse enter move right
 left.addEventListener("mouseenter", () => {
