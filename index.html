@@ -1,407 +1,419 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-  crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-  crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css\style.css">
-    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Playfair+Display" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>Split Landing Page</title>
-  </head>
 
-  <body>
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css\style.css">
+  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Playfair+Display" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Split Landing Page</title>
+</head>
 
-<div class="container">
-  <div class="split left" id="left-side">
-    <h1 id="leftH1">About Me</h1>
+<body>
+
+  <div class="container">
+    <div class="split left" id="left-side">
+      <h1 id="leftH1">About Me</h1>
       <div class="icons l-icons" id="icon-left"><a href="https://github.com/cbied" target="_blank"><i class="fab fa-3x fa-github-square "></i></a></div>
       <div class="icons l-icons" id="icon-right"><a href="https://www.linkedin.com/in/chris-biediger-60739162/" target="_blank"><i class="fab fa-3x fa-linkedin"></i></a></div>
       <div class="icons l-icons" id="icon-bottom"><a href="mailto:cabiediger@gmail.com" target="_blank"><i class="fas fa-3x fa-envelope"></i></a></div>
 
-  <!-- Modal button -->
-  <button class="btn btn-outline-light button" id="leftBtn" data-toggle="modal" data-target="#myModal">Read More</button>
+      <!-- Modal button -->
+      <button class="btn btn-outline-light button" id="leftBtn" data-toggle="modal" data-target="#myModal">Read More</button>
 
 
-  <!-- Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body">
-        <!-- Left Accordion -->
-      <div id="accordion">
-        <div class="card">
-          <div class="card-header">
-            <h5 class="text-center">
-              <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
-                About Me
-              </a>
-            </h5>
-          </div>
-          <!-- About me section -->
-          <div id="collapse1" class="collapse active">
-            <div class="card-body">
-              <div class="media" id="profilePic">
-                <img class="mr-3 mt-3" id="profilePic" src="img/professional.jpg">
-                <div class="media-body">
-                  <h5>Hello!</h5>
-                  <p>My name is Chris and I am a frontend developer. Please checkout my skills below, as well as my projects to the right. If you have any questions or want to contact me, you can email me at <a href="mailto:cabiediger@gmail.com" target="_blank"><b>cabiediger@gmail.com</b></a></p>
-                  <p>I currently travel full time and do freelance work. I love to combined my two passions of traveling the world and working on web developemnt projects that excite me. </p>
+      <!-- Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <!-- Left Accordion -->
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="text-center">
+                      <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
+                        About Me
+                      </a>
+                    </h5>
+                  </div>
+                  <!-- About me section -->
+                  <div id="collapse1" class="collapse active">
+                    <div class="card-body">
+                      <div class="media" id="profilePic">
+                        <img class="mr-3 mt-3" id="profilePic" src="img/professional.jpg">
+                        <div class="media-body">
+                          <h5>Hello!</h5>
+                          <p>My name is Chris and I am a frontend developer. Please checkout my skills below, as well as my projects to the right. If you have any questions or want to contact me, you can email me at <a id="AboutmeEmail" href="mailto:cabiediger@gmail.com"
+                              target="_blank"><b>cabiediger@gmail.com</b></a></p>
+                          <p>I currently travel full time and do freelance work. I love to combined my two passions of traveling the world and working on web developemnt projects that excite me. </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <!-- Skills section -->
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="text-center">
+                      <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
+                        Skills
+                      </a>
+                    </h5>
+                  </div>
+
+                  <div id="collapse2" class="collapse">
+                    <div class="card-body">
+                      <table class="table table-borderless text-center">
+                        <thead class="text-white bg-dark">
+                          <tr>
+                            <th>Frontend</th>
+                            <th>Framworks/tools</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">HTML</th>
+                            <td>Git/Git bash</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">CSS</th>
+                            <td>Bootstrap</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">JavaScript</th>
+                            <td>Sass</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"></th>
+                            <td>WordPress</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
               </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-outline-primary text-white" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
-      <!-- Skills section -->
-      <div class="card">
-        <div class="card-header">
-          <h5 class="text-center">
-            <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
-              Skills
-            </a>
-          </h5>
-        </div>
-
-        <div id="collapse2" class="collapse">
-          <div class="card-body">
-            <table class="table table-borderless text-center">
-              <thead class="text-white bg-dark">
-                  <tr>
-                      <th>Frontend</th>
-                      <th>Framworks/tools</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <th scope="row">HTML</th>
-                      <td>Git/Git bash</td>
-                  </tr>
-                  <tr>
-                      <th scope="row">CSS</th>
-                      <td>Bootstrap</td>
-                  </tr>
-                  <tr>
-                      <th scope="row">JavaScript</th>
-                      <td>Sass</td>
-                  </tr>
-                  <tr>
-                      <th scope="row"></th>
-                      <td>WordPress</td>
-                  </tr>
-              </tbody>
-          </table>
-        </div>
-    </div>
-  </div>
-
-          </div>
-        </div>
-      <div class="modal-footer">
-        <button class="btn btn-outline-primary text-white" data-dismiss="modal">Close</button>
       </div>
+
     </div>
-  </div>
-</div>
 
-</div>
-
-  <!-- right side -->
-  <div class="split right">
-    <h1 id="rightH1">Projects</h1>
+    <!-- right side -->
+    <div class="split right">
+      <h1 id="rightH1">Projects</h1>
       <div class="icons r-icons" id="icon-left"><a href="https://github.com/cbied" target="_blank"><i class="fab fa-3x fa-github-square "></i></a></div>
       <div class="icons r-icons" id="icon-right"><a href="https://www.linkedin.com/in/chris-biediger-60739162/" target="_blank"><i class="fab fa-3x fa-linkedin"></i></a></div>
       <div class="icons r-icons" id="icon-bottom"><a href="mailto:cabiediger@gmail.com" target="_blank"><i class="fas fa-3x fa-envelope"></i></a></div>
 
-  <!-- right Modal button -->
-  <button class="btn btn-outline-primary button" id="rightBtn" data-toggle="modal" data-target="#projectModal">Read More</button>
+      <!-- right Modal button -->
+      <button class="btn btn-outline-primary button" id="rightBtn" data-toggle="modal" data-target="#projectModal">Read More</button>
 
 
-  <!-- right Modal -->
-  <div class="modal" id="projectModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-  <!-- right Accordion -->
-<div id="accordion2">
-    <!-- Project 1 -->
-  <div class="card">
-    <div class="card-header">
-      <h5 class="text-center">
-        <a href="#collapse3" data-parent="#accordion2" data-toggle="collapse">
-          Moc-kup
-        </a>
-      </h5>
-    </div>
-
-    <div id="collapse3" class="collapse active">
-      <div class="card-body projects">
-        <div class="media">
-            <div class="imgScroll mr-2">
-              <img class="mr-3 align-self-center" src="img/moc-kup.jpg">
+      <!-- right Modal -->
+      <div class="modal" id="projectModal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">&times;</button>
             </div>
-          <div class="media-body project-body">
-                <h5>Moc-kup Book</h5>
-                <p>This site showcases a book. It has an option to subscribe, tells a little about the book, a "why" section, an "about" section on the authors, and finally a contact section.</p>
+            <div class="modal-body">
+              <!-- right Accordion -->
+              <div id="accordion2">
+                <!-- Project 1 -->
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="text-center">
+                      <a href="#collapse3" data-parent="#accordion2" data-toggle="collapse">
+                        Moc-kup
+                      </a>
+                    </h5>
+                  </div>
 
-                <div class="projectIcons">
-                  <div class="mb-3 mr-5"><a href="https://github.com/cbied/moc-kup" target="_blank"><i class="fab fa-3x fa-github-square"  data-toggle="tooltip" data-placement="top" title="Check out the code"></i></a></div>
-                  <div class="mb-3"><a href="https://cbied.github.io/moc-kup/" target="_blank"><i class="far fa-3x fa-eye" data-toggle="tooltip" data-placement="bottom" title="Check out the site"></i></a></div>
+                  <div id="collapse3" class="collapse active">
+                    <div class="card-body projects">
+                      <div class="media">
+                        <div class="imgScroll mr-2">
+                          <img class="mr-3 align-self-center" src="img/moc-kup.jpg">
+                        </div>
+                        <div class="media-body project-body">
+                          <h5>Moc-kup Book</h5>
+                          <p>This site showcases a book. It has an option to subscribe, tells a little about the book, a "why" section, an "about" section on the authors, and finally a contact section.</p>
+
+                          <div class="projectIcons">
+                            <div class="mb-3 mr-5"><a href="https://github.com/cbied/moc-kup" target="_blank"><i class="fab fa-3x fa-github-square" data-toggle="tooltip" data-placement="top" title="Check out the code"></i></a></div>
+                            <div class="mb-3"><a href="https://cbied.github.io/moc-kup/" target="_blank"><i class="far fa-3x fa-eye" data-toggle="tooltip" data-placement="bottom" title="Check out the site"></i></a></div>
+                          </div>
+
+                          <table class="table table-borderless">
+                            <thead class="text-white bg-dark">
+                              <tr>
+                                <th class="text-center" colspan="5">Technologies Used</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="longTr">
+                                <td>HTML</td>
+                                <td>CSS</td>
+                                <td>Bootstrap</td>
+                                <td>Sass</td>
+                                <td>jQuery</td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="text-center">
+                      <a href="#collapse4" data-parent="#accordion2" data-toggle="collapse">
+                        Goala
+                      </a>
+                    </h5>
+                  </div>
+
+                  <div id="collapse4" class="collapse active">
+                    <div class="card-body projects">
+                      <div class="media">
+                        <div class="imgScroll mr-2">
+                          <img class="mr-3 align-self-center" src="img/goala.jpg">
+                        </div>
+                        <div class="media-body project-body">
+                          <h5>Goala Services</h5>
+                          <p>This is a multi-page site. It has some interactive JavaScript on the landing page under the heading section and in the photo section. Includes an "About", "Services", "Blog", and "Contact Us" page.</p>
+
+                          <div class="projectIcons">
+                            <div class="mb-3 mr-5"><a href="https://github.com/cbied/goala" target="_blank"><i class="fab fa-3x fa-github-square" data-toggle="tooltip" data-placement="top" title="Check out the code"></i></a></div>
+                            <div class="mb-3"><a href="https://cbied.github.io/goala/" target="_blank"><i class="far fa-3x fa-eye" data-toggle="tooltip" data-placement="bottom" title="Check out the site"></i></a></div>
+                          </div>
+
+                          <table class="table table-borderless">
+                            <thead class="text-white bg-dark">
+                              <tr>
+                                <th class="text-center" colspan="5">Technologies Used</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="longTr">
+                                <td>HTML</td>
+                                <td>CSS</td>
+                                <td>Bootstrap</td>
+                                <td>JavaScript</td>
+                                <td>jQuery</td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <table class="table table-borderless">
-                  <thead class="text-white bg-dark">
-                    <tr>
-                      <th class="text-center" colspan="5">Technologies Used</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="longTr">
-                      <td>HTML</td>
-                      <td>CSS</td>
-                      <td>Bootstrap</td>
-                      <td>Sass</td>
-                      <td>jQuery</td>
-                    </tr>
-                </tbody>
-              </table>
+                <!-- Project 3 -->
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="text-center">
+                      <a href="#collapse5" data-parent="#accordion2" data-toggle="collapse">
+                        Blogger
+                      </a>
+                    </h5>
+                  </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Project 2 -->
-  <div class="card">
-    <div class="card-header">
-      <h5 class="text-center">
-        <a href="#collapse4" data-parent="#accordion2" data-toggle="collapse">
-          Goala
-        </a>
-      </h5>
-    </div>
+                  <div id="collapse5" class="collapse active">
+                    <div class="card-body projects2">
+                      <div class="media">
+                        <div class="imgScroll2 mr-2">
+                          <img class="mr-3 align-self-center" src="img/blogger.jpg">
+                        </div>
+                        <div class="media-body project-body">
+                          <h5>Blogger</h5>
+                          <p>Blogger is a site to keep your blog post organized. Modals pop up when you want to add a post, category, or user. You also have a profile and login section.</p>
 
-    <div id="collapse4" class="collapse active">
-      <div class="card-body projects">
-        <div class="media">
-          <div class="imgScroll mr-2">
-            <img class="mr-3 align-self-center" src="img/goala.jpg">
-          </div>
-          <div class="media-body project-body">
-                <h5>Goala Services</h5>
-                <p>This is a multi-page site. It has some interactive JavaScript on the landing page under the heading section and in the photo section. Includes an "About", "Services", "Blog", and "Contact Us" page.</p>
+                          <div class="projectIcons">
+                            <div class="mb-3 mr-5"><a href="https://github.com/cbied/blogger" target="_blank"><i class="fab fa-3x fa-github-square" data-toggle="tooltip" data-placement="top" title="Check out the code"></i></a></div>
+                            <div class="mb-3"><a href="https://cbied.github.io/blogger/" target="_blank"><i class="far fa-3x fa-eye" data-toggle="tooltip" data-placement="bottom" title="Check out the site"></i></a></div>
+                          </div>
 
-                <div class="projectIcons">
-                  <div class="mb-3 mr-5"><a href="https://github.com/cbied/goala" target="_blank"><i class="fab fa-3x fa-github-square"  data-toggle="tooltip" data-placement="top" title="Check out the code"></i></a></div>
-                  <div class="mb-3"><a href="https://cbied.github.io/goala/" target="_blank"><i class="far fa-3x fa-eye" data-toggle="tooltip" data-placement="bottom" title="Check out the site"></i></a></div>
+                          <table class="table table-borderless">
+                            <thead class="text-white bg-dark">
+                              <tr>
+                                <th class="text-center" colspan="2">Technologies Used</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>HTML</td>
+                                <td>Bootstrap</td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <table class="table table-borderless">
-                  <thead class="text-white bg-dark">
-                    <tr>
-                      <th class="text-center" colspan="5">Technologies Used</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="longTr">
-                      <td>HTML</td>
-                      <td>CSS</td>
-                      <td>Bootstrap</td>
-                      <td>JavaScript</td>
-                      <td>jQuery</td>
-                    </tr>
-                </tbody>
-              </table>
+                <!-- Project 4 -->
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="text-center">
+                      <a href="#collapse6" data-parent="#accordion2" data-toggle="collapse">
+                        Recreating (part of) the Lodash library
+                      </a>
+                    </h5>
+                  </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                  <div id="collapse6" class="collapse active">
+                    <div class="card-body projects2">
+                      <div class="media">
+                        <div class="imgScroll2 mr-2">
+                          <img class="mr-3 align-self-center" src="img/lodash.jpg">
+                        </div>
+                        <div class="media-body project-body">
+                          <h5>Lodash Library</h5>
+                          <p>Lodash is a JavaScript library which provides utility functions for common programming tasks. I recreated some of the functions to understand the library and how some of the utilities worked.</p>
 
-  <!-- Project 3 -->
-  <div class="card">
-    <div class="card-header">
-      <h5 class="text-center">
-        <a href="#collapse5" data-parent="#accordion2" data-toggle="collapse">
-          Blogger
-        </a>
-      </h5>
-    </div>
+                          <div class="projectIcons">
+                            <div class="mb-3"><a href="https://github.com/cbied/lodash" target="_blank"><i class="fab fa-3x fa-github-square" data-toggle="tooltip" data-placement="top" title="Check out the code"></i></a></div>
+                          </div>
 
-    <div id="collapse5" class="collapse active">
-      <div class="card-body projects2">
-        <div class="media">
-          <div class="imgScroll2 mr-2">
-            <img class="mr-3 align-self-center" src="img/blogger.jpg">
-          </div>
-          <div class="media-body project-body">
-                <h5>Blogger</h5>
-                <p>Blogger is a site to keep your blog post organized. Modals pop up when you want to add a post, category, or user. You also have a profile and login section.</p>
+                          <table class="table table-borderless">
+                            <thead class="text-white bg-dark">
+                              <tr>
+                                <th class="text-center" colspan="2">Technologies Used</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>JavaScript</td>
+                                <td>testing</td>
+                              </tr>
+                            </tbody>
+                          </table>
 
-                <div class="projectIcons">
-                  <div class="mb-3 mr-5"><a href="https://github.com/cbied/blogger" target="_blank"><i class="fab fa-3x fa-github-square"  data-toggle="tooltip" data-placement="top" title="Check out the code"></i></a></div>
-                  <div class="mb-3"><a href="https://cbied.github.io/blogger/" target="_blank"><i class="far fa-3x fa-eye" data-toggle="tooltip" data-placement="bottom" title="Check out the site"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <table class="table table-borderless">
-                  <thead class="text-white bg-dark">
-                    <tr>
-                      <th class="text-center" colspan="2">Technologies Used</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>HTML</td>
-                      <td>Bootstrap</td>
-                    </tr>
-                </tbody>
-              </table>
+                <!-- Project 5 -->
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="text-center">
+                      <a href="#collapse7" data-parent="#accordion2" data-toggle="collapse">
+                        NetworkLab
+                      </a>
+                    </h5>
+                  </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                  <div id="collapse7" class="collapse active">
+                    <div class="card-body projects">
+                      <div class="media">
+                        <div class="imgScroll mr-2">
+                          <img class="mr-3 align-self-center" src="img/networkLab.jpg">
+                        </div>
+                        <div class="media-body project-body">
+                          <h5>Network Lab</h5>
+                          <p>Network Lab is a single landing page with several sections about the services. It also has an modal for the "Contact Us" button at the bottom.</p>
 
-  <!-- Project 4 -->
-  <div class="card">
-    <div class="card-header">
-      <h5 class="text-center">
-        <a href="#collapse6" data-parent="#accordion2" data-toggle="collapse">
-          Recreating (part of) the Lodash library
-        </a>
-      </h5>
-    </div>
+                          <div class="projectIcons">
+                            <div class="mb-3 mr-5"><a href="https://github.com/cbied/networkLab" target="_blank"><i class="fab fa-3x fa-github-square" data-toggle="tooltip" data-placement="top" title="Check out the code"></i></a></div>
+                            <div class="mb-3"><a href="https://cbied.github.io/networkLab/" target="_blank"><i class="far fa-3x fa-eye" data-toggle="tooltip" data-placement="bottom" title="Check out the site"></i></a></div>
+                          </div>
 
-    <div id="collapse6" class="collapse active">
-      <div class="card-body projects2">
-        <div class="media">
-          <div class="imgScroll2 mr-2">
-            <img class="mr-3 align-self-center" src="img/lodash.jpg">
-          </div>
-          <div class="media-body project-body">
-                <h5>Lodash Library</h5>
-                <p>Lodash is a JavaScript library which provides utility functions for common programming tasks. I recreated some of the functions to understand the library and how some of the utilities worked.</p>
+                          <table class="table table-borderless">
+                            <thead class="text-white bg-dark">
+                              <tr>
+                                <th class="text-center" colspan="4">Technologies Used</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>HTML</td>
+                                <td>CSS</td>
+                                <td>Bootstrap</td>
+                                <td>jQuery</td>
+                              </tr>
+                            </tbody>
+                          </table>
 
-                <div class="projectIcons">
-                  <div class="mb-3"><a href="https://github.com/cbied/lodash" target="_blank"><i class="fab fa-3x fa-github-square"  data-toggle="tooltip" data-placement="top" title="Check out the code"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <table class="table table-borderless">
-                  <thead class="text-white bg-dark">
-                    <tr>
-                      <th class="text-center" colspan="2">Technologies Used</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>JavaScript</td>
-                      <td>testing</td>
-                    </tr>
-                </tbody>
-              </table>
+                <!-- Project 6 -->
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="text-center">
+                      <a href="#collapse8" data-parent="#accordion2" data-toggle="collapse">
+                        Door Game
+                      </a>
+                    </h5>
+                  </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                  <div id="collapse8" class="collapse active">
+                    <div class="card-body projects2">
+                      <div class="media">
+                        <div class="imgScroll2 mr-2">
+                          <img class="mr-3 align-self-center" src="img/doorGame.jpg">
+                        </div>
+                        <div class="media-body">
+                          <h5>Chore Door Game</h5>
+                          <p>Open the doors and try to avoid the robot, who will make you do chores! This project showcases JavaScript and the logic behind making a simple game.</p>
 
-  <!-- Project 5 -->
-  <div class="card">
-    <div class="card-header">
-      <h5 class="text-center">
-        <a href="#collapse7" data-parent="#accordion2" data-toggle="collapse">
-          NetworkLab
-        </a>
-      </h5>
-    </div>
+                          <div class="projectIcons">
+                            <div class="mb-3 mr-5"><a href="https://github.com/cbied/doorGame" target="_blank"><i class="fab fa-3x fa-github-square" data-toggle="tooltip" data-placement="top" title="Check out the code"></i></a></div>
+                            <div class="mb-3"><a href="https://cbied.github.io/doorGame/" target="_blank"><i class="far fa-3x fa-eye" data-toggle="tooltip" data-placement="bottom" title="Check out the site"></i></a></div>
+                          </div>
 
-    <div id="collapse7" class="collapse active">
-      <div class="card-body projects">
-        <div class="media">
-          <div class="imgScroll mr-2">
-            <img class="mr-3 align-self-center" src="img/networkLab.jpg">
-          </div>
-          <div class="media-body project-body">
-                <h5>Network Lab</h5>
-                <p>Network Lab is a single landing page with several sections about the services. It also has an modal for the "Contact Us" button at the bottom.</p>
+                          <table class="table table-borderless">
+                            <thead class="text-white bg-dark">
+                              <tr>
+                                <th class="text-center" colspan="3">Technologies Used</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>HTML</td>
+                                <td>CSS</td>
+                                <td>JavaScript</td>
+                              </tr>
+                            </tbody>
+                          </table>
 
-                <div class="projectIcons">
-                  <div class="mb-3 mr-5"><a href="https://github.com/cbied/networkLab" target="_blank"><i class="fab fa-3x fa-github-square"  data-toggle="tooltip" data-placement="top" title="Check out the code"></i></a></div>
-                  <div class="mb-3"><a href="https://cbied.github.io/networkLab/" target="_blank"><i class="far fa-3x fa-eye" data-toggle="tooltip" data-placement="bottom" title="Check out the site"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <table class="table table-borderless">
-                  <thead class="text-white bg-dark">
-                    <tr>
-                      <th class="text-center" colspan="4">Technologies Used</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>HTML</td>
-                      <td>CSS</td>
-                      <td>Bootstrap</td>
-                      <td>jQuery</td>
-                    </tr>
-                </tbody>
-              </table>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 6 -->
-  <div class="card">
-    <div class="card-header">
-      <h5 class="text-center">
-        <a href="#collapse8" data-parent="#accordion2" data-toggle="collapse">
-          Door Game
-        </a>
-      </h5>
-    </div>
-
-    <div id="collapse8" class="collapse active">
-      <div class="card-body projects2">
-        <div class="media">
-          <div class="imgScroll2 mr-2">
-            <img class="mr-3 align-self-center" src="img/doorGame.jpg">
-          </div>
-          <div class="media-body">
-                <h5>Chore Door Game</h5>
-                <p>Open the doors and try to avoid the robot, who will make you do chores! This project showcases JavaScript and the logic behind making a simple game.</p>
-
-                <div class="projectIcons">
-                  <div class="mb-3 mr-5"><a href="https://github.com/cbied/doorGame" target="_blank"><i class="fab fa-3x fa-github-square"  data-toggle="tooltip" data-placement="top" title="Check out the code"></i></a></div>
-                  <div class="mb-3"><a href="https://cbied.github.io/doorGame/" target="_blank"><i class="far fa-3x fa-eye" data-toggle="tooltip" data-placement="bottom" title="Check out the site"></i></a></div>
-                </div>
-
-                <table class="table table-borderless">
-                  <thead class="text-white bg-dark">
-                    <tr>
-                      <th class="text-center" colspan="3">Technologies Used</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>HTML</td>
-                      <td>CSS</td>
-                      <td>JavaScript</td>
-                    </tr>
-                </tbody>
-              </table>
-
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-outline-primary text-white" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
@@ -409,30 +421,16 @@
   </div>
 
 
-      </div>
-        </div>
-          <div class="modal-footer">
-            <button class="btn btn-outline-primary text-white" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+</body>
 
 
-  </body>
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-  <script src="javascript\file.js"></script>
-  <script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="javascript\file.js"></script>
+<script>
   // Get the current year for the copyright
   $('#year').text(new Date().getFullYear());
 </script>
+
 </html>
